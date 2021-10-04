@@ -1,0 +1,61 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+	line-height: 1.88889;
+	color: white; 
+    background-color: black;
+}
+.page-wrapper {
+    padding: 20px;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex-direction: row;
+  margin: 10%;
+}
+
+header {
+    /*background-image: url(https://lh3.googleusercontent.com/L5jzquGT1xV63XFbh5xV3X40_X-q5a8FpzofznIBG5Doe4WoyKjxZw_39YzUHOUuZxk54RTerEir8Q0j-njvGR9mU5pdtabz1bAsmjNi3iZoP2pACPbJOTmAPMyLFkr8hZrJm_fpNKp1HJICUtMNhxNY4y505KOntWdecdqInpeC8d_pJDSb20OyIUdVAnvp0ugHAhnMM5LIVjyr8S633oQRSA7FSZReknIzjXBXB2HYpl77WJ3aNFUOV_4hp8TMo2V4TiMnKOiuZffqWR0DkKp011chADL3krzw7_24AOzd-5PkZOApHaeii-jDbRuj7Z7oiuO7okf8Kcmc-dCk9Rpb6-5OySUaDCzVTeet-EwtRgjRypMYVZr6Gv0iho_ab8pAhMb5-yOQEY2i7AUBXE_xuKSoea8N1uIKcCP5cgn5stN28EKu3OXvM_lUSpqsQ3MQG_qCUvopWJ80CUcgaTIHE_o37kxPcc2_SC9XRAv42YmtEOaWLDrvtA0vmONr0YtDyO9BURBF_iet3Mg4-qXmXjKVkwkBlOBZQrH7pVz47tnHKvQ-je0jNuUvh0UzAj52AYl84GqnHNzDBHOoyiaC8M55vOCxxw5mL2J57X4qBUrYqAwuqKvODA9kieI9X9DsuSW1aHM-6l_pZFb9eF82_x3zeVmn243AsI-RkRigSo-og4fMJeLqufu1qEmmw6I9ARQMeAoMjpyWaWxhzd0=w1371-h914-no?authuser=0);
+    background-size: 100% 100%;
+    width:100%;
+    height: 100vh;*/
+}
+header h1 {
+    font-size: 30pt;
+    text-align: center;
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 150px;
+    width: 200px;
+    font-size: 16px;
+}
+button:hover {
+    /* Play animation and change background color of page when button is hovered over */
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+#personal-project-text {
+    position: relative;
+    font-size: 14pt;
+}
+
+#personal-project {
+    background-image: url("https://images.iphotography.com/wp-content/uploads/2019/08/06103117/19-1.jpg");
+    background-size: 100% 100%;
+}
