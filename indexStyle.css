@@ -12,6 +12,10 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+
 .container {
   display: flex;
   width: 90%;
@@ -50,12 +54,8 @@ button:hover {
     animation-duration: 2s;
 }
 
-#personal-project-text {
-    position: relative;
-    font-size: 14pt;
-}
-
 #personal-project {
     background-image: url("https://images.iphotography.com/wp-content/uploads/2019/08/06103117/19-1.jpg");
     background-size: 100% 100%;
+    font-size: 16pt;
 }

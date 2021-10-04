@@ -49,6 +49,9 @@ table, th, td {
 .column#home {
     flex: 70%;
 }
+.column#landscape-left {
+    flex: 65%;
+}
 .column img{
     margin: 8px;
     vertical-align: middle;
@@ -76,3 +79,6 @@ table, th, td {
     float: right;
 }
 
+ul {
+    list-style-type: circle;
+}
