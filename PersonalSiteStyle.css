@@ -75,7 +75,7 @@ table, th, td {
     margin: 5px;
     float: left;
 }
-.column label#right {
+.column .right {
     float: right;
 }
 
