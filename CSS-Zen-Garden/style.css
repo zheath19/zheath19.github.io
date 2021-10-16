@@ -1,0 +1,282 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+@font-face {
+	font-family: quantum;
+	src: url(Quantum.otf);
+}
+
+@font-face {
+	font-family: evolve;
+	src: url(EvolveThin.otf);
+}
+
+@font-face {
+	font-family: potra;
+	src: url(Potra.ttf);
+}
+
+@font-face {
+	font-family: equinox;
+	src: url(Equinox.otf);
+}
+
+@keyframes moveLeft {
+	0% {left: 500px;}
+	100% {left:0px;}
+  }
+
+@keyframes fadeIn {
+	0% {opacity: 0%;}
+	100% {opacity: 100%;}	
+}
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% equinox, sans-serif;
+	line-height: 1.88889;
+	color: #fff; 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	padding: 0 175px 0 35px;
+	text-align: justify;
+	}
+h3 { 
+	/*font: italic normal 1.4em georgia, sans-serif;*/
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #fff;
+	/* Add Glow Effect to Titles */
+	text-shadow:
+      0 0 7px #7649fe,
+      0 0 10px #7649fe,
+      0 0 21px #7649fe,
+      0 0 42px #7649fe,
+      0 0 82px #7649fe,
+      0 0 92px #7649fe,
+      0 0 102px #7649fe,
+      0 0 151px #7649fe;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: 	#8ebec9;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	background: transparent url(BlackStarryBackground.jfif) repeat top left;
+	/*padding: 0 175px 0 110px; */
+	position: relative;
+	}
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	position:static;
+	}
+
+header { 
+	margin-bottom: 10px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	float: left;
+	
+	text-indent: 10%;
+	white-space: nowrap;
+	overflow: visible;
+	}
+header h1 {
+	position: absolute;
+	/* Add Blue Glow to Text */
+  	text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(46, 193, 252),
+      0 0 82px rgb(46, 193, 252),
+      0 0 92px rgb(46, 193, 252),
+      0 0 102px rgb(46, 193, 252),
+      0 0 151px rgb(46, 193, 252);
+	font-size: 40pt;
+
+	/* Animation that brings the text in from the right side of the page ot the left */
+	animation-name: fadeIn;
+	animation-timing-function: linear;
+  	animation-duration: 2s;
+}
+header h2 { 
+	margin-top: 0px; 
+	margin-bottom: 100px; 
+	width: 200px; 
+	height: 18px; 
+	position: absolute;
+	top: 150px;
+
+	animation-name: fadeIn;
+	animation-timing-function: linear;
+  	animation-duration: 2s;
+	
+	font-size: 30pt;
+	text-indent: 80%;
+	white-space: nowrap;
+	text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(46, 193, 252),
+      0 0 82px rgb(46, 193, 252),
+      0 0 92px rgb(46, 193, 252),
+      0 0 102px rgb(46, 193, 252),
+      0 0 151px rgb(46, 193, 252);
+	}
+header {
+	padding-top: 10px;
+	height: 87px;
+	background: transparent url(BlueHorizon.jpg) no-repeat top left;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
+}
+
+.summary {
+	background: url(https://www.freeiconspng.com/thumbs/comet/silver-comet-meteor-photos-12.png) no-repeat top left;
+	background-size: 40%;
+	background-position-x: 5%;
+	
+
+	clear: both; 
+	margin-bottom: 200vh;
+	margin-right: -150px;
+	float: left; 
+	}
+.summary p {
+	margin-top: 80px;
+	font: italic 1.1em/2.2; 
+	font-size: small;
+	width: 100px;
+	}
+
+.preamble {
+	padding: 0px 10px 0 10px;
+	}
+.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}
+
+footer { 
+	margin-top: 50px;
+	margin-right: 150px;
+	text-align: center; 
+	font-size: large;
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+.sidebar {
+	margin-left: 600px; 
+	position: absolute; 
+	top: 100vh; 
+	right: 0;
+	}
+.sidebar .wrapper { 
+	font-size: 10px;
+	text-align: center;
+	/*background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; */
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 130px; 
+	}
+.sidebar h3.select { 
+	/*background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; */
+	margin: 10px 0 5px 0; 
+	width: 97px; 
+	height: 16px; 
+
+	text-indent: 10%;
+	text-align: center;
+	white-space: nowrap;
+
+	}
+.sidebar h3.archives { 
+	/*background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; */
+	white-space: nowrap;
+	}
+.sidebar h3.resources { 
+	/*background: transparent url(https://ak.picdn.net/shutterstock/videos/33819715/thumb/7.jpg) no-repeat top left; */
+	margin: 25px 0 5px 0; 
+	width:100%; 
+	height: 100%;
+
+	text-indent: 10%;
+	white-space: nowrap;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	/*background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; */
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #8cf879;
+	text-shadow:
+      0 0 7px #1ea706c9,
+      0 0 10px #1ea706c9,
+      0 0 21px #1ea706c9,
+      0 0 42px #1ea706c9,
+      0 0 82px #1ea706c9,
+      0 0 92px #1ea706c9,
+      0 0 102px #1ea706c9,
+      0 0 151px #1ea706c9;
+	}
+.sidebar li a:visited {
+	color: #49cc32;
+	}
+
+
+.extra1 {
+	background: transparent url(goldenMoon.png) top left no-repeat; 
+	background-size: 100% 100%;
+	position: absolute; 
+	top: 100vh; 
+	right: 0; 
+	width: 148px; 
+	height: 148px;
+	margin-top: 20px;
+	}
