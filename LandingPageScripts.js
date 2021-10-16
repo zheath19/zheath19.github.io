@@ -8,3 +8,13 @@ personalButton.onmouseover = function() {
 personalButton.onmouseout = function() {
     body.style.backgroundColor = 'black';
 }
+
+var zenButton = document.getElementById('zen-garden');
+
+zenButton.onmouseover = function() {
+  body.style.backgroundColor = '#348947';
+}
+
+zenButton.onmouseout = function() {
+    body.style.backgroundColor = 'black';
+}
