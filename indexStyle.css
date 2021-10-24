@@ -71,3 +71,13 @@ button:hover {
     opacity: 80%;
     font-size: 16pt;
 }
+
+#java-project {
+    background-image: url("https://www.maxpixel.net/static/photo/1x/Aroma-Tea-Breakfast-Gray-Coffee-Cup-Java-Steam-311845.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
+    font-size: 16pt;
+    color: white;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Zack's Landing Page</title>
+        <link rel="stylesheet" media="screen" href="Weather-Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <!--The body contains all information that will be present on the website-->
+    <body id="landing-page">
+        <div class="page-wrapper">
+            <!--Banner-->
+            <header class="topnav">
+                <img id="logo" src="WoWPhotos/WoWLogo.png" alt="World of Warcraft Weather">
+                <h1><strong>WEATHER</strong></h1>
+                <!--Search Bar-->
+                <form id="search-form">
+                    <input type="text" placeholder="Search for a city" id="search-bar">
+                    <input type="image" id="search-icon" src="WoWPhotos/goldsearchicon.png" alt="Submit">
+                    <!--<button type="submit">Submit</button>-->
+                    <span id="msg"></span>
+                </form>
+            </header>
+
+            
+
+            <div id="weather-display">
+                <div id="weather-text">
+                    <br>
+                    <!--Weather of location entered-->
+                    <p id="weather-report"></p>
+                    <p class="left">It's Like... </p>
+        
+                    <!--Name of WoW Location-->
+                    <h1 class="center" id="wow-location"></h1>
+
+                    <p class="right">Out There </p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+        </div>
+    </body>
+    <!--Java Script File, did not work when linked in the header-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Weather-Script.js"></script>
+</html>
