@@ -30,7 +30,7 @@
 @keyframes moveLeft {
 	0% {left: 500px;}
 	100% {left:0px;}
-  }
+}
 
 @keyframes fadeIn {
 	0% {opacity: 0%;}
