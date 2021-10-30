@@ -37,8 +37,9 @@ window.addEventListener('load', () => {
           // Change Page elements to match weather
           report.innerText = `It is ${fahrenheit}°F with ${desc} in ${place}`;
           setBackground(fahrenheit);
-          // Remove and add class to wow-location to animate it
-          $zoneName.addClass( "fadeAnimation" );
+          // Remove and add classes to wow-location to animate it
+          $zoneName.toggleClass( "fadeAnimation" );
+          $zoneName.toggleClass("scale");
         });
     });
   }
@@ -74,9 +75,9 @@ form.addEventListener("submit", e => {
           // Change Page elements to match weather
           report.innerText = `It is ${fahrenheit}°F with ${desc} in ${place}`;
           setBackground(fahrenheit);
-           // Remove and add class to wow-location to animate it
-           //$zoneName.removeClass( "fadeAnimation").addClass( "fadeAnimation" );
+           // Remove and add classes to wow-location to animate it
            $zoneName.toggleClass("fadeAnimation");
+           $zoneName.toggleClass("scale");
 
           msg.textContent = "";
           form.reset();
