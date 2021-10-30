@@ -14,6 +14,16 @@
 	src: url(Lifecraft.ttf);
 }
 
+/* Fade in Animation for Location Text */
+@keyframes fadeIn {
+	0% {opacity: 0%;}
+	100% {opacity: 100%;}	
+}
+
+@keyframes slideIn {
+    0% {left: 500px;}
+	100% {left:0px;}
+}
 
 html {
     margin: 0;
@@ -88,15 +98,32 @@ header form {
 
 /*Holds the Changing Background image of the weather report*/
 #weather-display {
-    /*background-image: url("WoWPhotos/ScholazarBasin.jfif");*/
+    background-image: url("WoWPhotos/EarthWoWMap.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:100%;
-    width:auto;
+    height:auto;
+    width:100%;
 }
 #weather-text {
     margin: 20px;
 }
+#wow-location {
+    /* Animation that fades in the location text 
+	animation-name: slideIn;
+	animation-timing-function: linear;
+  	animation-duration: 2s; */
+    transition: all 3s;
+}
+.fadeAnimation {
+    /* Class that will be added and removed to replay the fade 
+     animation each time the location changes
+     Animation that fades in the location text */
+	animation-name: fadeIn;
+    animation-iteration-count: 1;
+	animation-timing-function: linear;
+  	animation-duration: 2s;
+}
+
 button {
     cursor: pointer;
     border: none;
@@ -117,6 +144,8 @@ button {
     color:white;
 
     border-radius: 5px;
+    border-color: #f4af04;
+    border-style: double;
     background-color: #241410;
     
 }
@@ -127,13 +156,16 @@ input#search-icon {
 
     height: 26px;
     width: 26px;
+    border-radius: 2px;
+    border-style: double;
+    border-color: #f4af04;
+    background-color: black;
 }
 #msg {
     color: red;
     display:block;
 }
 input[type=image] {
-    border:0;
     display:block;
     height: 20%;
     width: auto;

@@ -2,6 +2,7 @@
 let report = document.getElementById("weather-report");
 let wowimg = document.getElementById("weather-display");
 let zoneName = document.getElementById("wow-location");
+let $zoneName = $("#wow-location");
 
 // On load take user location and display weather for it
 window.addEventListener('load', () => {
@@ -25,14 +26,19 @@ window.addEventListener('load', () => {
           console.log(data);
           const { temp } = data.main;
           const place = data.name;
+          const humidity = data.main.humidity;
+          const desc = data.weather[0].description;
+          
 
           // Convert int temp to fahrenheit
           let fahrenheit = (temp * 9) / 5 + 32;
           fahrenheit = Math.round(fahrenheit);
 
           // Change Page elements to match weather
-          report.innerText = `It is ${fahrenheit}°F in ${place}`;
+          report.innerText = `It is ${fahrenheit}°F with ${desc} in ${place}`;
           setBackground(fahrenheit);
+          // Remove and add class to wow-location to animate it
+          $zoneName.addClass( "fadeAnimation" );
         });
     });
   }
@@ -58,14 +64,19 @@ form.addEventListener("submit", e => {
           console.log(data);
           const { temp } = data.main;
           const place = data.name;
+          const humidity = data.main.humidity;
+          const desc = data.weather[0].description;
 
           // Convertint temp to fahrenheit
           let fahrenheit = (temp * 9) / 5 + 32;
           fahrenheit = Math.round(fahrenheit);
 
           // Change Page elements to match weather
-          report.innerText = `It is ${fahrenheit}°F in ${place}`;
+          report.innerText = `It is ${fahrenheit}°F with ${desc} in ${place}`;
           setBackground(fahrenheit);
+           // Remove and add class to wow-location to animate it
+           //$zoneName.removeClass( "fadeAnimation").addClass( "fadeAnimation" );
+           $zoneName.toggleClass("fadeAnimation");
 
           msg.textContent = "";
           form.reset();
