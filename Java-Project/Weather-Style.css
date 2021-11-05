@@ -114,8 +114,8 @@ header form {
     background-image: url("WoWPhotos/EarthWoWMap.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:auto;
-    width:100%;
+    height:100%;
+    width:auto;
 }
 #weather-text {
     margin: 20px;
