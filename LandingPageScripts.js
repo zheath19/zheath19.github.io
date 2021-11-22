@@ -26,3 +26,12 @@ javaButton.onmouseover = function() {
 javaButton.onmouseout = function() {
     body.style.backgroundColor = 'black';
 }
+
+var finalButton = document.getElementById('final-project');
+finalButton.onmouseover = function() {
+  body.style.backgroundColor = '#dbea13';
+}
+
+finalButton.onmouseout = function() {
+    body.style.backgroundColor = 'black';
+}

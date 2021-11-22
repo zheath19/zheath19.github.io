@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WoW Weather</title>
+        <link rel="stylesheet" media="screen" href="Weather-Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Link OpenLayers Map API-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+       
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <!--The body contains all information that will be present on the website-->
+    <body id="landing-page">
+        <div class="page-wrapper">
+            <!--Banner-->
+            <header class="topnav">
+              <div class="leftHeader">
+                <img id="logo" src="WoWPhotos/WoWLogo.png" alt="World of Warcraft Weather">
+                <h1><strong>WEATHER</strong></h1>
+                <!--Search Bar-->
+                <form id="search-form">
+                    <input type="text" placeholder="Search for a city" id="search-bar">
+                    <input type="image" id="search-icon" src="WoWPhotos/goldsearchicon.png" alt="Submit">
+                    <!--<button type="submit">Submit</button>-->
+                    <span class="error" id="msg"></span>
+                </form>
+              </div>
+
+
+                <!--Audio Player-->
+                
+                <h4 class="title-info rightHeader" id="title">Legends of Azeroth</h4>
+                <div class="music-container rightHeader" id="music-container">
+                    
+                    <audio src="WoWMusic/LegendsofAzeroth.mp3" id="audio"></audio>
+              
+                    <div class="img-container">
+                      <img src="WoWPhotos/logo.jfif" alt="music-cover" id="album-cover" />
+                    </div>
+
+                    <!--Audio Bar-->
+                    <div class="navigation">
+                      <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                     </button>
+
+                     <!--<h4 class="music-info" id="title">ElwynnForest</h4>-->
+                     <div class="music-info">
+                        <div class="progress-container" id="progress-container">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                     </div>
+
+                     <div class="time" id="currTime"> 
+                       00:00
+                     </div>
+
+                     <div class="time">
+                       / 
+                     </div>
+
+                     <div class="time" id="durTime"> 
+                       00:00
+                    </div>
+
+                    <img id="volume-icon" src="WoWPhotos/goldvolume.png">
+                    <input type="range" id="volume-control">
+
+                    </div>
+                  </div>
+
+            </header>
+
+            <!--Navigation Bar between WoW Display and Real Map-->
+            <div class="navbar">
+              <button class="navbutton" id="wow-map">Where in WoW</button>
+              <button class="navbutton" id="real-map">Interactive Map</button>
+              <button class="navbutton" id="random-button">Random Location</button>
+            </div>
+
+            
+            <!--Display of weather desc and wow art-->
+            <div id="weather-display">
+                <div id="weather-text">
+                    <br>
+                    <!--Weather of location entered-->
+                    <p id="weather-report"></p>
+                    <p class="left">It's Like... </p>
+        
+                    <!--Name of WoW Location-->
+                    <h1 class="center scale" id="wow-location">The Earth</h1>
+
+                    <p class="right">Out There </p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <!--Interactive Map-->
+            <div id="map" class="map"></div>
+            <div id="lon-lat"></div>
+            <button class="navbutton"id="map-search">Find Weather for Coordinates</button>
+
+        </div>
+    </body>
+    <!--Java Script Files, did not work when linked in the header-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+    <script type="text/javascript" src="Weather-Script.js"></script>
+</html>

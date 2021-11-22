@@ -81,3 +81,13 @@ button:hover {
     font-size: 16pt;
     color: white;
 }
+
+#final-project {
+    background-image: url("https://fabacademy.org/archives/2013/students/niespielak.anna/data/uploads/fin33.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 80%;
+    font-size: 16pt;
+    color: white;
+}
