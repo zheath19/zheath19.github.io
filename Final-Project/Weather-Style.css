@@ -367,10 +367,13 @@ header form {
     background-image: url("WoWPhotos/EarthWoWMap.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 800px;
+    min-height: 600px;
     max-width: 1920px;
     max-height: 1080px;
     height:100%;
     width:100%;
+    opacity: .9;
     visibility: visible;
 }
 #weather-text {
@@ -452,3 +455,24 @@ input[type=image] {
     height: 400px;
     width: 75%;
 }
+.lon-lat {
+    font-family: lifecraft, sans-serif;
+    color:#241410;
+}
+#lon-lat {
+    margin-bottom:-50px;
+    font-size: 16pt;
+}
+#instructions {
+    margin-bottom:-5px;
+    font-size: 14pt;
+}
+
+/* Hide Map Related Things by default 
+#map {
+    display: none;
+}
+#map-search {
+    display: none;
+}
+ */

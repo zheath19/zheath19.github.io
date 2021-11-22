@@ -82,10 +82,15 @@
             <!--Navigation Bar between WoW Display and Real Map-->
             <div class="navbar">
               <button class="navbutton" id="wow-map">Where in WoW</button>
-              <button class="navbutton" id="real-map">Interactive Map</button>
               <button class="navbutton" id="random-button">Random Location</button>
+              <button class="navbutton" id="map-button">Toggle Interactive Map</button>
+              <button class="navbutton" id="map-search">Find Weather for Coordinates</button>
             </div>
 
+            <!--Interactive Map-->
+            <div class="lon-lat" id="instructions">Click anywhere on the Map to store the coordinates and then search for the weather there by pressing the button above</div>
+            <div class="lon-lat" id="lon-lat"></div>
+            <div id="map" class="map"></div>
             
             <!--Display of weather desc and wow art-->
             <div id="weather-display">
@@ -107,10 +112,9 @@
                 <br>
             </div>
 
-            <!--Interactive Map-->
-            <div id="map" class="map"></div>
-            <div id="lon-lat"></div>
-            <button class="navbutton"id="map-search">Find Weather for Coordinates</button>
+            
+           
+            
 
         </div>
     </body>

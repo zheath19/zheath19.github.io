@@ -378,6 +378,22 @@ map.on('click', function(e) {
   document.getElementById("lon-lat").classList.remove("error"); 
 }); 
 
+// Make Interactive button toggle the map and its functionality on and off
+const mapButton = document.querySelector("#map-button");
+mapButton.addEventListener('click', function(e) {
+
+  // Show map, coordinate text, and button if it is hidden and hide if visible
+  if (document.querySelector("#map").style.display == "none") {
+    $('#map').show();
+    $('.lon-lat').show()
+    $('#map-search').show();
+  } else {
+    $('#map').hide();
+    $('.lon-lat').hide();
+    $('#map-search').hide();
+  }
+});
+
 // When Search button by map is pressed, return weather for coordinates found from click
 const searchButton = document.querySelector("#map-search"); 
 searchButton.addEventListener('click', function(e) {
@@ -424,8 +440,14 @@ searchButton.addEventListener('click', function(e) {
 const randomButton = document.querySelector("#random-button"); 
 randomButton.addEventListener('click', function(e) {
 
-  // List of Possible Sample Cities 
-  let citiesList = ["Munich", "Los Angeles"];
+  // List of Possible Sample Cities. Taken from https://en.wikipedia.org/wiki/List_of_countries_by_largest_and_second_largest_cities
+  let citiesList = ["Munich", "Los Angeles", "Sukhumi", "Kabul", "Episkopi Cantonment", "Mariehamn", "Tirana", "Algiers", "Tafuna",
+    "Andorra la Vella", "Luanda", "North Side", "St. John's", "Buenos Aires", "Yerevan", "Stepanakert", "Oranjestad", "Sydney", "Vienna",
+    "Baku", "Nassau", "Manama", "Dhaka", "Bridgetown", "Minsk", "Brussels", "Belize City", "Cotonou", "St. George's", "Thimphu", "Sarajevo",
+    "Gaborone", "São Paulo", "Sofia", "Ouagadougou", "Bujumbura", "Havana", "Copenhagen", "Prague", "Paris", "Berlin", "Hamburg", "Gibraltar",
+    "Port-au-Prince", "Budapest", "Delhi", "Baghdad", "Dublin", "Cork", "Jerusalem", "Rome","Tokyo", "Seoul", "Tijuana", "Monte Carlo", "Windhoek",
+    "San Antonio", "Moscow", "Singapore", "Johannesburg", "Stockholm", "Madrid", "Damascus", "Jamestown", "Saint-Pierre", "Kingstown", "Bangkok", 
+    "Dubai", "London", "New York City", "Vatican City", "Harare", "Port Vila"];
   // Choose a random city from the list
   let randCity = citiesList[Math.round((Math.random() * (citiesList.length - 1)))];
 
