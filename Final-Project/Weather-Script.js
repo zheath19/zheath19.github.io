@@ -91,79 +91,79 @@ form.addEventListener("submit", e => {
 // Takes in current temp and then displays a corresponding image from WoW and its subsequent BGM
 function setBackground(fahrenheit) {
   if (fahrenheit > 100) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/Firelands.jpg)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/Firelands.jpg)";
     zoneName.innerHTML = 'The Firelands';
     changeMusic('Firelands');
 
   }
   else if (fahrenheit > 92) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/BarrensIllustrated.jpg)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/BarrensIllustrated.jpg)";
     zoneName.innerHTML = 'The Barrens';
     changeMusic('Barrens');
 
   }
   else if (fahrenheit > 87) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/ThousandNeedlesIllustrated.jpg)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/ThousandNeedlesIllustrated.jpg)";
     zoneName.innerHTML = 'Thousand Needles';
     changeMusic('ThousandNeedles');
 
   }
   else if (fahrenheit > 79) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/UnGoroIllustrated.png)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/UnGoroIllustrated.png)";
     zoneName.innerHTML = "Un'goro Crater";
     changeMusic("Un'goro");
 
   }
   else if (fahrenheit > 74) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/ScholazarBasin.jfif)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/ScholazarBasin.jfif)";
     zoneName.innerHTML = 'Scholazar Basin';
     changeMusic('ScholazarBasin');
 
   }
   else if (fahrenheit > 69) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/KazenIllustrasted.jpeg)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/KazenIllustrasted.jpeg)";
     zoneName.innerHTML = 'Kezan';
     changeMusic('Kezan');
 
   }
   else if (fahrenheit > 62) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/JadeForestIllustrated.png)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(WoWPhotos/JadeForestIllustrated.png)";
     zoneName.innerHTML = 'The Jade Forest';
     changeMusic('JadeForest');
 
   }
   else if (fahrenheit > 54) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/ElwynnForestIllustrated.png)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/ElwynnForestIllustrated.png)";
     zoneName.innerHTML = 'Elwynn Forest';
     changeMusic('ElwynnForest');
 
   }
   else if (fahrenheit > 49) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/TeldrassilIllustrated.jpg)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/TeldrassilIllustrated.jpg)";
     zoneName.innerHTML = 'Teldrassil';
     changeMusic('Teldrassil');
 
   }
   else if (fahrenheit > 39) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/GrizzlyHillsIllustrated.png)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/GrizzlyHillsIllustrated.png)";
     zoneName.innerHTML = 'Grizzly Hills';
     changeMusic('GrizzlyHills');
 
   }
   else if (fahrenheit > 29) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/SP.png)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/SP.png)";
     zoneName.innerHTML = 'The Storm Peaks';
     changeMusic('StormPeaks');
 
   }
   else if (fahrenheit > 19) {
-    wowimg.style.backgroundImage = "url(WoWPhotos/DunMoroghIllustrated.jpg)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/DunMoroghIllustrated.jpg)";
     zoneName.innerHTML = 'Dun Morogh';
     changeMusic('DunMorogh');
 
   }
   else {
-    wowimg.style.backgroundImage = "url(WoWPhotos/FrozenThroneIllustrated.jpg)";
+    wowimg.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/FrozenThroneIllustrated.jpg)";
     zoneName.innerHTML = 'The Frozen Throne';
     changeMusic('FrozenMarch');
 
@@ -245,7 +245,7 @@ function playSong() {
   title.classList.add('play');
   playBtn.querySelector('i.fas').classList.remove('fa-play');
   playBtn.querySelector('i.fas').classList.add('fa-pause');
-  playBtn.style.backgroundImage = "url(WoWPhotos/goldplay.png)";
+  playBtn.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(WoWPhotos/goldplay.png)";
 
   audio.play();
 
@@ -349,7 +349,7 @@ var map = new ol.Map({
   target: 'map',
   layers: [
     new ol.layer.Tile({
-      source: new ol.source.OSM()
+      source: new ol.source.Stamen({layer: 'terrain'})
     })
   ],
   view: new ol.View({
@@ -387,10 +387,15 @@ mapButton.addEventListener('click', function(e) {
     $('#map').show();
     $('.lon-lat').show()
     $('#map-search').show();
+    // Change Size of Weather display to have it sit side by side with Map
+    wowimg.style.transform = "scale(.55) translateX(460px) translateY(-1065px)";
   } else {
     $('#map').hide();
     $('.lon-lat').hide();
     $('#map-search').hide();
+    // Change Size of Weather display to take up more space and be centered
+    wowimg.style.transform = "scale(.9)";
+
   }
 });
 

@@ -85,6 +85,7 @@ p {
 
 /* Sectioning Header into two columns */
 header {
+    margin-top: -20px;
     display:grid;
     grid-template-rows: 200px;
     grid-template-columns:50% 50%;
@@ -137,6 +138,7 @@ header form {
 
 /* Navigation Bar */
 .navbar {
+    margin-left: 15px;
     overflow: hidden;
     display: flex;
     
@@ -179,8 +181,8 @@ header form {
     position: relative;
     padding: 20px 30px;
     margin: 100px 0;
-    height: 10%;
-    width:90%;
+    height: 9%;
+    width:85%;
 }
 
 .img-container {
@@ -252,7 +254,7 @@ header form {
     background-size: cover;
     margin-left: -7%;
     height:40px;
-    width:40px;
+    width:50px;
 
 }
 
@@ -364,17 +366,21 @@ header form {
 
 /*Holds the Changing Background image of the weather report*/
 #weather-display {
-    background-image: url("WoWPhotos/EarthWoWMap.jpg");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ), url("WoWPhotos/EarthWoWMap.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 800px;
-    min-height: 600px;
+    min-width: 720px;
+    min-height: 480px;
     max-width: 1920px;
     max-height: 1080px;
     height:100%;
     width:100%;
-    opacity: .9;
-    visibility: visible;
+    transform: scale(.55) translateX(460px) translateY(-1065px);
+
+    margin-top: -50px;
 }
 #weather-text {
     margin: 20px;
@@ -425,15 +431,17 @@ button {
     border-color: #f4af04;
     border-style: double;
     background-color: #241410;
+
+    transform: scale(1.27) translate(18px);
     
 }
 input#search-icon {
     position: absolute;
-    left: 180px;
-    top: 0px;
+    left: 223px;
+    top: -3px;
 
-    height: 26px;
-    width: 26px;
+    height: 31px;
+    width: 31px;
     border-radius: 2px;
     border-style: double;
     border-color: #f4af04;
@@ -450,10 +458,13 @@ input[type=image] {
 }
 
 /* Styling of Map */
+.map-display {
+    margin-left: 15px;
+}
 .map {
     margin-top: 5%;
-    height: 400px;
-    width: 75%;
+    height: 438px;
+    width: 40%;
 }
 .lon-lat {
     font-family: lifecraft, sans-serif;
