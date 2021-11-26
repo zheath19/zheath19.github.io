@@ -378,7 +378,7 @@ header form {
     max-height: 1080px;
     height:100%;
     width:100%;
-    transform: scale(.55) translateX(460px) translateY(-1065px);
+    transform: scale(.55) translateX(37%) translateY(-1065px);
 
     margin-top: -50px;
 }

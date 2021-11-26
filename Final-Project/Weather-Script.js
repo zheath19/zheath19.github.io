@@ -388,7 +388,7 @@ mapButton.addEventListener('click', function(e) {
     $('.lon-lat').show()
     $('#map-search').show();
     // Change Size of Weather display to have it sit side by side with Map
-    wowimg.style.transform = "scale(.55) translateX(460px) translateY(-1065px)";
+    wowimg.style.transform = "scale(.55) translateX(37%) translateY(-1065px)";
   } else {
     $('#map').hide();
     $('.lon-lat').hide();
